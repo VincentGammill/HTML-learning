@@ -24,9 +24,6 @@ h2 {
   /*font-weight: normal;*/
 }
 
-h3 {
-}
-
 hr {
   background-color: #f9e0ae;
   border-style: none;
@@ -35,18 +32,9 @@ hr {
   width: 60%;
 }
 
-p {
-
-}
 
 span {
   color: #c24914;
-}
-
-.bottom-cloud {
-  position: absolute;
-  top: 10em;
-  right: 70%;
 }
 
 .bottom-container {
@@ -94,10 +82,4 @@ span {
 
   text-align: left;
   width: 49%;
-}
-
-.top-cloud {
-  position: absolute;
-  right: 30%;
-  top: 2%;
 }
