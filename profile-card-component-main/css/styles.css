@@ -1,5 +1,6 @@
 body {
   background-color: #19a2ae;
+  margin: 0;
 }
 
 
@@ -13,6 +14,19 @@ body {
   color: hsl(228, 45%, 44%);
 }
 
+.bottom-circle {
+  position: absolute;
+  bottom: -600px;
+  right: -300px;
+}
+
+.profile-card {
+  text-align: center;
+}
+
 .top-circle {
-  
+  position: absolute;
+  top: -400px;
+  left: -300px;
+
 }
