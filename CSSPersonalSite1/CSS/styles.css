@@ -58,7 +58,7 @@ span {
 
 .footer-link {
   color: #fc8621;
-  margin: auto 2rem;
+  margin: auto 0.6rem;
   text-decoration: none;
 }
 
@@ -75,11 +75,16 @@ span {
 }
 
 .skill-row {
+  font-size: 1rem;
+  margin: 0 0.5rem;
   /*
   clear: both;
   display: inline-block;
   */
-
   text-align: left;
-  width: 49%;
+  width: 25rem;
+}
+
+.vincent-pic {
+  width: 15rem;
 }
