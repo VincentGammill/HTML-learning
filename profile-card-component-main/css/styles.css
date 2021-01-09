@@ -35,7 +35,7 @@ hr {
 
 .card-middle {
   font-size: 1.75rem;
-  margin-top: 8rem;
+  margin-top: 4rem;
 }
 
 .card-top {
@@ -72,9 +72,7 @@ hr {
 .profile-pic {
  border: 4px white solid;
  border-radius: 50%;
- position: absolute;
- right: 127px;
- top: 92px;
+ margin-top: -7rem;
 }
 
 .score {
