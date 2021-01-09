@@ -1,13 +1,25 @@
+html {
+  box-sizing: border-box;
+  font-size: 50%;
+}
+
 body {
-  background-color: #19a2ae;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background: url(../images/bg-pattern-top.svg), url(../images/bg-pattern-bottom.svg), #19a2ae;
+  background-position: right calc(47vw + 15%) bottom calc(65vh - 15vw), left calc(40vw + 25%) top calc(72vh - 10vw);
+  background-repeat: no-repeat;
   font-family: 'Kumbh Sans', sans-serif;
-  font-size: 18px;
+  font-size: 2.25rem;
   margin: 0;
   overflow: hidden;
+  padding: 3rem;
 }
 
 hr {
-  margin: 1.5em;
+  margin: 1.5rem;
 }
 
 .age {
@@ -16,31 +28,13 @@ hr {
   color: hsl(0, 0%, 59%);
 }
 
-.attribution {
-  font-size: 11px;
-  text-align: center;
-}
-
-.attribution a {
-  color: #3e52a3;
-  color: hsl(228, 45%, 44%);
-}
-
-.bottom-circle {
-  position: absolute;
-  text-align: center;
-  left: 50%;
-  top: 50%;
-  transform: translate(0, 0);
-  z-index: -1;
-}
-
 .card-bottom {
   display: flex;
 }
 
 .card-middle {
-  margin-top: 4em;
+  font-size: 1.75rem;
+  margin-top: 8rem;
 }
 
 .card-top {
@@ -58,23 +52,19 @@ hr {
 .location {
   color: #969696;
   color: hsl(0, 0%, 59%);
-  font-size: 16px;
   font-weight: 400;
   }
 
 .profile-card {
   background-color: #ffffff;
   background-color: hsl(0, 0%, 100%);
-  border-radius: 1.2em;
-  display: block;
-  left: 50%;
-  margin: 0 0;
-  overflow: hidden;
-  position: absolute;
+  border-radius: 2rem;
+  align-items: center;
+  justify-content: center;
   text-align: center;
-  top: 50%;
-  transform: translate(-50%, -50%);
-  width: 350px;
+  overflow: hidden;
+  width: 43.75rem;
+  height: 50rem;
 }
 
 .profile-pic {
@@ -97,20 +87,12 @@ hr {
   color: hsl(0, 0%, 59%);
   font-size: 11px;
   font-weight: 400;
-  margin-top: 0.8em;
+  margin-top: 1.6rem;
 }
 
 .score-box {
+  margin-top: 2rem;
   flex-grow: 1;
-}
-
-.top-circle {
-  position: absolute;
-  text-align: center;
-  left: 50%;
-  top: 50%;
-  transform: translate(-978px, -900px);
-  z-index: -1;
 }
 
 .wavy-card-bckgrd {
