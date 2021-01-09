@@ -1,8 +1,19 @@
 body {
   background-color: #19a2ae;
+  font-family: 'Kumbh Sans', sans-serif;
+  font-size: 18px;
   margin: 0;
 }
 
+hr {
+  margin: 1.5em;
+}
+
+.age {
+  font-weight: 400;
+  color: #969696;
+  color: hsl(0, 0%, 59%);
+}
 
 .attribution {
   font-size: 11px;
@@ -16,17 +27,87 @@ body {
 
 .bottom-circle {
   position: absolute;
-  bottom: -600px;
-  right: -300px;
+  bottom: -650px;
+  right: -150px;
+  z-index: -1;
 }
 
+.card-bottom {
+  display: flex;
+}
+
+.card-middle {
+  margin-top: 4em;
+}
+
+.card-top {
+  left: 0;
+  position: relative;
+  top: 0;
+}
+
+.name-age {
+  color: #2d3248;
+  color: hsl(229, 23%, 23%);
+  font-weight: 700;
+}
+
+.location {
+  color: #969696;
+  color: hsl(0, 0%, 59%);
+  font-size: 16px;
+  font-weight: 400;
+  }
+
 .profile-card {
+  background-color: #ffffff;
+  background-color: hsl(0, 0%, 100%);
+  border-radius: 1.2em;
+  display: block;
+  left: 50%;
+  margin: 0 0;
+  overflow: hidden;
+  position: absolute;
   text-align: center;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 350px;
+}
+
+.profile-pic {
+ border: 4px white solid;
+ border-radius: 50%;
+ position: absolute;
+ right: 127px;
+ top: 92px;
+}
+
+.score {
+  color: #2d3248;
+  color: hsl(229, 23%, 23%);
+  font-weight: 700;
+  margin: 0;
+}
+
+.score-type {
+  color: #969696;
+  color: hsl(0, 0%, 59%);
+  font-size: 11px;
+  font-weight: 400;
+  margin-top: 0.8em;
+}
+
+.score-box {
+  flex-grow: 1;
 }
 
 .top-circle {
   position: absolute;
-  top: -400px;
-  left: -300px;
+  top: -500px;
+  left: -275px;
+  z-index: -1;
+}
 
+.wavy-card-bckgrd {
+  z-index: -1;
 }
