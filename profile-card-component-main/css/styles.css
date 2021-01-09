@@ -3,6 +3,7 @@ body {
   font-family: 'Kumbh Sans', sans-serif;
   font-size: 18px;
   margin: 0;
+  overflow: hidden;
 }
 
 hr {
@@ -27,8 +28,10 @@ hr {
 
 .bottom-circle {
   position: absolute;
-  bottom: -650px;
-  right: -150px;
+  text-align: center;
+  left: 50%;
+  top: 50%;
+  transform: translate(0, 0);
   z-index: -1;
 }
 
@@ -103,8 +106,10 @@ hr {
 
 .top-circle {
   position: absolute;
-  top: -500px;
-  left: -275px;
+  text-align: center;
+  left: 50%;
+  top: 50%;
+  transform: translate(-978px, -900px);
   z-index: -1;
 }
 
