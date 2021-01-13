@@ -1,15 +1,21 @@
 :root {
-  --color-moderate-violet : hsl(263, 55%, 52%);
+  --color-moderate-violet: hsl(263, 55%, 52%);
   --color-dark-gray-blue: hsl(217, 19%, 35%);
+  --color-dark-gray-blue-70: hsla(217, 19%, 35%, 0.7);
+  --color-dark-gray-blue-50: hsla(217, 19%, 35%, 0.5);
   --color-dark-black-blue: hsl(219, 29%, 14%);
   --color-white: hsl(0, 0%, 100%);
+  --color-white-70: hsla(0, 0%, 100%, 0.7);
+  --color-white-50: hsla(0, 0%, 100%, 0.5);
   --color-light-gray: hsl(0, 0%, 81%);
   --color-light-gray-blue: hsl(210, 46%, 95%);
 }
 
 html {
+  /*
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  */
   font-size: 25%;
 }
 
@@ -26,4 +32,101 @@ body {
   background: var(--color-light-gray-blue);
   font-family: 'Barlow Semi Condensed', sans-serif;
   font-size: 3.25rem;
+  font-weight: 500;
+}
+
+.card_1 {
+  background-color: var(--color-moderate-violet);
+}
+
+.card_2 {
+  background-color: var(--color-dark-gray-blue);
+}
+
+.card_3 {
+  background-color: var(--color-white);
+}
+
+.card_4 {
+  background-color: var(--color-dark-black-blue);
+}
+
+.card_5 {
+  background-color: var(--color-white);
+}
+
+/*
+A bunch of stuff to set the text colors and have lower opacities for the
+Verified Graduate stickers and the block quotes.
+*/
+.card_1 .testifier-name,
+.card_1 .headline-quote,
+.card_2 .testifier-name,
+.card_2 .headline-quote,
+.card_4 .testifier-name,
+.card_4 .headline-quote {
+  color: var(--color-white);
+}
+
+.card_1 .verified-grad-sticker,
+.card_2 .verified-grad-sticker,
+.card_4 .verified-grad-sticker {
+  color: var(--color-white-50);
+}
+
+.card_1 .block-quote,
+.card_2 .block-quote,
+.card_4 .block-quote {
+  color: var(--color-white-70);
+}
+
+.card_3 .testifier-name,
+.card_3 .headline-quote,
+.card_5 .testifier-name,
+.card_5 .headline-quote {
+  color: var(--color-dark-gray-blue);
+}
+
+.card_3 .verified-grad-sticker,
+.card_5 .verified-grad-sticker,
+  color: var(--color-dark-gray-blue-50);
+}
+
+.card_3 .block-quote,
+.card_5 .block-quote {
+  color: var(--color-dark-gray-blue-70);
+}
+
+.card-grid {
+  margin: 36rem;
+  /*
+  display: grid;
+  justify-content: center;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  grid-gap: 1rem;
+  */
+}
+
+.profile-pic {
+  border-radius: 50%;
+  float: left;
+  margin-right: 2rem;
+  width: 8rem;
+}
+
+.testimonial-card {
+  border-radius: 2.5rem;
+  margin: 4rem;
+  padding: 5rem;
+}
+
+.testifier-name {
+  font-size: 4rem;
+}
+
+.headline-quote {
+  clear: both;
+  font-size: 6rem;
+  font-weight: 600;
+  margin: 5rem 0;
 }
