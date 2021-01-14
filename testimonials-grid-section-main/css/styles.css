@@ -75,6 +75,12 @@ Verified Graduate stickers and the block quotes.
   color: var(--color-light-gray);
 }
 
+.card_1 .headline-quote,
+.card_2 .headline-quote,
+.card_4 .headline-quote {
+  color: var(--color-light-gray-blue);
+}
+
 .card_1 .verified-grad-sticker,
 .card_2 .verified-grad-sticker,
 .card_4 .verified-grad-sticker {
@@ -164,7 +170,7 @@ Add a little shadow for the very light cards
 
 .headline-quote {
   clear: both;
-  font-size: 4.5rem;
+  font-size: 6rem;
   font-weight: 600;
   margin: 5rem 0;
 }
