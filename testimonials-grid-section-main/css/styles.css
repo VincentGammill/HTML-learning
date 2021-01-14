@@ -1,21 +1,20 @@
 :root {
   --color-moderate-violet: hsl(263, 55%, 52%);
+  --color-pale-violet: hsl(263, 55%, 70%);
   --color-dark-gray-blue: hsl(217, 19%, 35%);
   --color-dark-gray-blue-70: hsla(217, 19%, 35%, 0.7);
   --color-dark-gray-blue-50: hsla(217, 19%, 35%, 0.5);
   --color-dark-black-blue: hsl(219, 29%, 14%);
   --color-white: hsl(0, 0%, 100%);
-  --color-white-70: hsla(0, 0%, 100%, 0.7);
-  --color-white-50: hsla(0, 0%, 100%, 0.5);
   --color-light-gray: hsl(0, 0%, 81%);
+  --color-light-gray-70: hsla(0, 0%, 81%, 0.7);
+  --color-light-gray-50: hsla(0, 0%, 81%, 0.5);
   --color-light-gray-blue: hsl(210, 46%, 95%);
 }
 
 html {
-  /*
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  */
   font-size: 25%;
 }
 
@@ -37,22 +36,27 @@ body {
 
 .card_1 {
   background-color: var(--color-moderate-violet);
+  grid-area: card_1;
 }
 
 .card_2 {
   background-color: var(--color-dark-gray-blue);
+  grid-area: card_2;
 }
 
 .card_3 {
   background-color: var(--color-white);
+  grid-area: card_3;
 }
 
 .card_4 {
   background-color: var(--color-dark-black-blue);
+  grid-area: card_4;
 }
 
 .card_5 {
   background-color: var(--color-white);
+  grid-area: card_5;
 }
 
 /*
@@ -65,19 +69,19 @@ Verified Graduate stickers and the block quotes.
 .card_2 .headline-quote,
 .card_4 .testifier-name,
 .card_4 .headline-quote {
-  color: var(--color-white);
+  color: var(--color-light-gray);
 }
 
 .card_1 .verified-grad-sticker,
 .card_2 .verified-grad-sticker,
 .card_4 .verified-grad-sticker {
-  color: var(--color-white-50);
+  color: var(--color-light-gray-50);
 }
 
 .card_1 .block-quote,
 .card_2 .block-quote,
 .card_4 .block-quote {
-  color: var(--color-white-70);
+  color: var(--color-light-gray-70);
 }
 
 .card_3 .testifier-name,
@@ -88,7 +92,7 @@ Verified Graduate stickers and the block quotes.
 }
 
 .card_3 .verified-grad-sticker,
-.card_5 .verified-grad-sticker,
+.card_5 .verified-grad-sticker {
   color: var(--color-dark-gray-blue-50);
 }
 
@@ -98,35 +102,70 @@ Verified Graduate stickers and the block quotes.
 }
 
 .card-grid {
-  margin: 36rem;
+  margin: 4rem;
   /*
-  display: grid;
-  justify-content: center;
   grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
   grid-gap: 1rem;
   */
 }
 
+@media only screen and (min-width: 1200px) {
+  .card-grid {
+    margin: 16rem 44rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    //grid-template-columns: repeat(auto-fill, minmax(400px, auto));
+    justify-content: center;
+    grid-template-areas:
+      'card_1 card_1 card_2 card_5'
+      'card_3 card_4 card_4 card_5';
+  }
+}
+
 .profile-pic {
   border-radius: 50%;
   float: left;
-  margin-right: 2rem;
+  margin-right: 3rem;
   width: 8rem;
+}
+
+/*
+Add a little border around the profile pic of the dark cards
+*/
+.card_1 .profile-pic,
+.card_4 .profile-pic
+ {
+  border: 0.5rem solid var(--color-pale-violet);
+}
+
+/*
+Add a little shadow for the very light cards
+*/
+
+.card_3,
+.card_5 {
+  box-shadow: 10px 10px 10px hsl(0, 0%, 91%);
 }
 
 .testimonial-card {
   border-radius: 2.5rem;
+  line-height: 1.5;
   margin: 4rem;
-  padding: 5rem;
+  padding: 8.25rem;
 }
 
 .testifier-name {
   font-size: 4rem;
+  margin-top: -1rem;
 }
 
 .headline-quote {
   clear: both;
-  font-size: 6rem;
+  font-size: 4.5rem;
   font-weight: 600;
   margin: 5rem 0;
+}
+
+.verified-grad-sticker {
+  margin-top: -1rem;
 }
